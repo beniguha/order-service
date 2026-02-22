@@ -1,0 +1,7 @@
+com\beniguha\orderservice\service\OrderService.class
+com\beniguha\orderservice\OrderServiceApplication.class
+com\beniguha\orderservice\exception\GlobalExceptionHandler.class
+com\beniguha\orderservice\controller\OrderController.class
+com\beniguha\orderservice\dto\OrderRequest.class
+com\beniguha\orderservice\entity\Order.class
+com\beniguha\orderservice\repository\OrderRepository.class

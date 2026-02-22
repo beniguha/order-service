@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_DB: orders
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: beni
+    ports:
+      - "5432:5432"
+
+  order-service:
+    build: .
+    container_name: order-service
+    depends_on:
+      - postgres
+    ports:
+      - "8081:8081"
